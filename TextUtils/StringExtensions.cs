@@ -17,7 +17,7 @@
 //  
 // Created: 1:49 AM 18-04-2014
 
-namespace TextUtils
+namespace TextUtils.Extensions
 {
     using System;
     using System.Text;
@@ -27,26 +27,42 @@ namespace TextUtils
         public static string[] RepeatAsArray(this string source, int count)
         {
             var result = new string[count];
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < result.Length; i++)
             {
                 result[i] = source;
             }
             return result;
         }
 
-        public static string Repeat(this string source, int count, bool addNewLine = false)
+        public static string Repeat(this string source, int count)
         {
             var sb = new StringBuilder(source.Length * count);
             for (int i = 0; i < count; i++)
             {
                 sb.Append(source);
-                if (addNewLine)
-                {
-                    sb.Append(Environment.NewLine);
-                }
             }
 
             return sb.ToString();
+        }
+
+        public static string RepeatLine(this string source, int count)
+        {
+            var sb = new StringBuilder(source.Length * count);
+            for (int i = 0; i < count; i++)
+            {
+                sb.Append(source + Environment.NewLine);
+            }
+
+            return sb.ToString();
+        }
+
+        public static byte[] ToByteArray(this string source, Encoding encoding = null)
+        {
+            if (encoding == null)
+            {
+                encoding = Encoding.UTF8;
+            }
+            return encoding.GetBytes(source);
         }
     }
 }

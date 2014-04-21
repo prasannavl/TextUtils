@@ -15,7 +15,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //  
-// Created: 1:54 AM 18-04-2014
+// Created: 10:43 PM 21-04-2014
 
 namespace TextUtils
 {
@@ -23,26 +23,11 @@ namespace TextUtils
 
     using TextUtils.Extensions;
 
-    public static class StringHelpers
+    internal class ByteHelpers
     {
-        public static string[] RepeatAsArray(string text, int count)
+        public static string ToEncodedString(byte[] source, Encoding encoding = null)
         {
-            return text.RepeatAsArray(count);
-        }
-
-        public static string Repeat(string text, int count)
-        {
-            return text.Repeat(count);
-        }
-
-        public static string RepeatLine(string text, int count)
-        {
-            return text.RepeatLine(count);
-        }
-
-        public static byte[] ToByteArray(string text, Encoding encoding = null)
-        {
-            return text.ToByteArray(encoding);
+            return source.ToEncodedString(encoding);
         }
     }
 }

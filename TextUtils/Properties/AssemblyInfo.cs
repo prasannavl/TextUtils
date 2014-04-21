@@ -25,7 +25,7 @@ using System.Resources;
 // associated with an assembly.
 
 [assembly: AssemblyTitle("TextUtils")]
-[assembly: AssemblyDescription("String and text helpers and utilities")]
+[assembly: AssemblyDescription("String and text helpers and utilities.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Launchark")]
 [assembly: AssemblyProduct("TextUtils")]
@@ -45,5 +45,5 @@ using System.Resources;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("1.0.0.1")]
+[assembly: AssemblyVersion("1.0.2.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

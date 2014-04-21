@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>TextUtils</id>
+    <version>1.0.2.0</version>
+    <title>TextUtils</title>
+    <authors>Launchark , Prasanna V. Loganathar</authors>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.txt</licenseUrl>
+    <projectUrl>https://github.com/prasannavl/TextUtils</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>String and text helpers and utilities.</description>
+    <copyright>Copyright 2014</copyright>
+    <tags>Strings helpers text utilities</tags>
+  </metadata>
+</package>
